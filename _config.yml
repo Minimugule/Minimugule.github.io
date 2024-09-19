@@ -6,3 +6,9 @@ theme: jekyll-theme-cayman # thème
 github_username: Minimugule
 mail : ballu.samu@gmail.com
 linkedin_username: Samuel Ballu
+
+
+# Navigation
+header_pages:
+  - index.md
+  - projects.md
