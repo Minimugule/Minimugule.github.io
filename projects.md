@@ -3,7 +3,8 @@ layout: default
 title: Projects
 ---
 
-# My projects
+# My Projects
+
 ## Craf beer around Rennes (R)
 [Link to project repository](https://github.com/Minimugule/OptimalLocationCraftBeer)  
 **Summary** : This R project analyzes the optimal location for establishing a craft beer cellar around Rennes, using demographic, economic, and geographic data.
