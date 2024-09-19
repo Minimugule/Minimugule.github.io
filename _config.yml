@@ -1,3 +1,9 @@
-title: Samuel's Portfolio
+title: "Samuel's Portfolio"
+email: "ballu.samu@gmail.com"
 description: "Master’s Degree in MAS, AI Pathway - My personal portfolio"
-theme: jekyll-theme-cayman
+baseurl: "" # Si tu utilises un sous-répertoire, ajoute-le ici
+url: "https://TonNomUtilisateur.github.io"
+theme: jekyll-theme-minimal # Remplace par le thème choisi
+github_username: Minimugule
+mail : ballu.samu@gmail.com
+linkedin_username: Samuel Ballu
