@@ -6,18 +6,18 @@
     <title>Home</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --background-color: #ecf0f1;
-            --text-color: #333;
+            --primary-color: #2F9994; /* Vert */
+            --secondary-color: #ffffff; /* Blanc */
+            --accent-color: #2c3e50; /* Couleur des textes */
+            --background-color: #ecf0f1; /* Gris clair */
+            --card-shadow: rgba(0, 0, 0, 0.1);
         }
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            color: var(--text-color);
+            color: var(--accent-color);
             background-color: var(--background-color);
         }
         h1, h2, h3 {
@@ -25,68 +25,81 @@
             transition: color 0.3s;
         }
         h1:hover, h2:hover, h3:hover {
-            color: var(--accent-color);
+            color: #1e7067; /* Une teinte plus foncée du vert */
         }
         p {
             margin: 10px 0;
         }
         a {
-            color: var(--accent-color);
+            color: var(--primary-color);
             text-decoration: none;
+            transition: text-decoration 0.3s;
         }
         a:hover {
             text-decoration: underline;
         }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
+        .card {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px var(--card-shadow);
         }
         .project-link {
             display: inline-block;
             margin-top: 5px;
-            padding: 5px 10px;
-            background-color: var(--accent-color);
+            padding: 8px 12px;
+            background-color: var(--primary-color);
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         .project-link:hover {
-            background-color: #2980b9;
+            background-color: #1e7067; /* Une teinte plus foncée du vert */
         }
     </style>
 </head>
 <body>
     <h1>Hello everyone 👋, I'm Samuel</h1>
 
-    <p>🎓 Master's in MAS, specializing in Artificial Intelligence</p>
-    <p>📊 Dual degree in Master's of Statistics and Economic Modeling</p>
+    <div class="card">
+        <p>🎓 Master's in MAS, specializing in Artificial Intelligence</p>
+        <p>📊 Dual degree in Master's of Statistics and Economic Modeling</p>
+        <p><a href="cv.html">Link to my CV</a></p>
+    </div>
 
-    <p><a href="cv.html">Link to my CV</a></p>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am passionate about artificial intelligence, statistical modeling, and data analysis. Here are some projects I have completed during my studies.</p>
+    </div>
 
-    <h2>About Me</h2>
-    <p>I am passionate about artificial intelligence, statistical modeling, and data analysis. Here are some projects I have completed during my studies.</p>
+    <div class="card">
+        <h2>Statistics Projects</h2>
 
-    <h2>Statistics Projects</h2>
+        <h3><em>Craft Beer Locations around Rennes (R)</em></h3>
+        <p><a href="https://github.com/Minimugule/OptimalLocationCraftBeer" target="_blank" class="project-link">Link to Project Repository</a></p>
+        <p><strong>Summary</strong>: This R project analyzes the optimal location for establishing a craft beer cellar around Rennes, using demographic, economic, and geographic data.</p>
 
-    <h3><em>Craft Beer Locations around Rennes (R)</em></h3>
-    <p><a href="https://github.com/Minimugule/OptimalLocationCraftBeer" target="_blank" class="project-link">Link to Project Repository</a></p>
-    <p><strong>Summary</strong>: This R project analyzes the optimal location for establishing a craft beer cellar around Rennes, using demographic, economic, and geographic data.</p>
+        <h3><em>Road Accidents in Rennes (Python)</em></h3>
+        <p><a href="https://github.com/Minimugule/AnalyzesRoadAccidents" target="_blank" class="project-link">Link to Project Repository</a></p>
+        <p><strong>Summary</strong>: This Python project analyzes road accidents using pandas and bokeh libraries for data visualization.</p>
+    </div>
 
-    <h3><em>Road Accidents in Rennes (Python)</em></h3>
-    <p><a href="https://github.com/Minimugule/AnalyzesRoadAccidents" target="_blank" class="project-link">Link to Project Repository</a></p>
-    <p><strong>Summary</strong>: This Python project analyzes road accidents using pandas and bokeh libraries for data visualization.</p>
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages</strong>: Python, R/RShiny, SQL/NoSQL, VBA, SAS, PowerBI</li>
+            <li><strong>Libraries</strong>: matplotlib, Pandas, bokeh, torch, networkx, numpy, keras, tidyverse, FactoMineR, sf...</li>
+            <li><strong>Tools</strong>: RStudio, Visual Studio Code, Jupyter, MongoDB</li>
+        </ul>
+    </div>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li><strong>Languages</strong>: Python, R/RShiny, SQL/NoSQL, VBA, SAS, PowerBI</li>
-        <li><strong>Libraries</strong>: matplotlib, Pandas, bokeh, torch, networkx, numpy, keras, tidyverse, FactoMineR, sf...</li>
-        <li><strong>Tools</strong>: RStudio, Visual Studio Code, Jupyter, MongoDB</li>
-    </ul>
-
-    <h2>Contact Me</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank">LinkedIn</a></li>
-        <li><a href="mailto:ballu.samu@gmail.com">Email</a></li>
-    </ul>
+    <div class="card">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:ballu.samu@gmail.com">Email</a></li>
+        </ul>
+    </div>
 </body>
 </html>
