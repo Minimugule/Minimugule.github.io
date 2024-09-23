@@ -1,120 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Samuel BALLU - Accueil</title>
     <style>
         :root {
-            --primary-color: #2F9994; /* Vert */
-            --secondary-color: #ffffff; /* Blanc */
-            --accent-color: #2c3e50; /* Couleur des textes */
-            --background-color: #ecf0f1; /* Gris clair */
+            --primary-color: #2F9994;
+            --secondary-color: #ffffff;
+            --accent-color: #2c3e50;
+            --background-color: #ecf0f1;
             --card-shadow: rgba(0, 0, 0, 0.1);
         }
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             color: var(--accent-color);
             background-color: var(--background-color);
         }
-        h1, h2, h3 {
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1, h2 {
             color: var(--primary-color);
             transition: color 0.3s;
         }
-        h1:hover, h2:hover, h3:hover {
-            color: #1e7067; /* Une teinte plus foncée du vert */
-        }
-        p {
-            margin: 10px 0;
-        }
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: text-decoration 0.3s;
-        }
-        a:hover {
-            text-decoration: underline;
+        h1:hover, h2:hover {
+            color: #1e7067;
         }
         .card {
             background-color: var(--secondary-color);
             border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
             box-shadow: 0 4px 10px var(--card-shadow);
+            transition: transform 0.3s;
         }
-        .project-link {
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
             display: inline-block;
-            margin-top: 5px;
-            padding: 8px 12px;
+            padding: 0.5rem 1rem;
             background-color: var(--primary-color);
             color: white;
+            text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        .project-link:hover {
-            background-color: #1e7067; /* Une teinte plus foncée du vert */
+        .btn:hover {
+            background-color: #1e7067;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
         }
     </style>
 </head>
 <body>
-    <h1>Hello everyone 👋</h1>
-
-    <div class="card">
-        <p>🎓 Master's in MAS, specializing in Artificial Intelligence</p>
-        <p>📊 Dual degree in Master's of Statistics and Economic Modeling</p>
-        <p><a href="cv.html" target="_blank" class="cv-link">My CV</a></p>
-    </div>
-
-    <div class="card">
-        <h2>About Me</h2>
-        <p>My name is Samuel Ballu, a Master’s student specializing in Artificial Intelligence, with a double degree in Statistical Engineering and Economic Modeling. My academic journey has equipped me with strong skills in data analysis, statistical modeling, and the development of Machine Learning and Deep Learning algorithms. Passionate about the evolution of artificial intelligence and its potential impact on our daily lives, I focus on applying these technologies to real-world projects.</p>
-        <p><strong>My Passions and Hobbies</strong></p>
-        <p>A passionate athlete, I played basketball for 10 years at the regional level, where I won four titles. This experience taught me the importance of teamwork, discipline, and resilience ; values I also apply to my academic and professional projects. I had the privilege of being my team’s captain many times, serving as a conduit for the coach’s instructions to my teammates.</p>
-        <p>For the past five years, I’ve also been playing beach volleyball with my friends. This sport allows me to unwind and maintain a healthy balance between work and pleisure.</p>
-        <p>Outside of sports, I’m a huge cinema enthusiast. My favorite directors include Christopher Nolan and Quentin Tarantino, whose works I admire for their creativity, intricate storytelling, and ability to captivate audiences. I often find parallels between the complexity of their narratives and how artificial intelligence models can be used to solve complex problems.</p>
-    </div>
-
-    <div class="card">
-        <h2>Statistics Spatial Project</h2>
-
-        <h3><em>Craft Beer Locations around Rennes (R)</em></h3>
-        <p><a href="Projet_cave_final.html" target="_blank" class="project-link">Link to Beer Project Repository</a></p>
-        <p><strong>Summary</strong>: This R project focuses on the analysis and proposal for the establishment of a beer cellar in and around the Rennes area. Using a spatial statistics approach, we aim to identify an optimal location for this beer cellar and select a relevant brand. Through a methodical analysis, we will incorporate demographic, economic, and consumption data to guide our recommendations.</p>
-        
-    </div>
-
-    <div class = "card">
-        <h2>Visualisation Projects</h2>
-        
-        <h3><em>Road Accidents in Rennes (Python)</em></h3>
-        <p><a href="Projet_Visualisation_Accidents_Rennes.html" target="_blank" class="project-link">Link to Accidents Project Repository</a></p>
-        <p><strong>Summary</strong>: This Python focused on the analysis of road accident data that occurred in Rennes between 2012 and 2022. We examined the evolution of incidents involving injuries, fatalities, etc., as well as their geographical distribution using a map of accident locations. Additionally, we studied the distribution of accidents based on the types of vehicles involved, as well as the times and days when accidents are most frequent. These analyses provide insights to inform road safety policies and accident prevention efforts in the Rennes region.</p>
-
-    </div>
-
-    <div class = "card">
-        <h2>IA Projects</h2>
-        <p>In development</p>
-    </div>
-
-    <div class="card">
-        <h2>Technical Skills</h2>
+    <nav class="navbar">
         <ul>
-            <li><strong>Languages</strong>: Python, R/RShiny, SQL/NoSQL, VBA, SAS, PowerBI</li>
-            <li><strong>Libraries</strong>: matplotlib, Pandas, bokeh, torch, networkx, numpy, keras, tidyverse, FactoMineR, sf...</li>
-            <li><strong>Tools</strong>: RStudio, Visual Studio Code, Jupyter, MongoDB</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="projects.html">Projets</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="card">
-        <h2>Contact Me</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:ballu.samu@gmail.com">Email</a></li>
-        </ul>
+    <div class="container">
+        <h1 class="fade-in">Samuel BALLU</h1>
+        
+        <div class="card fade-in">
+            <h2>À propos de moi</h2>
+            <p>Étudiant en Master spécialisé en Intelligence Artificielle, avec un double diplôme en Ingénierie Statistique et Modélisation Économique. Passionné par l'IA et son impact sur notre quotidien, je me concentre sur l'application de ces technologies à des projets concrets.</p>
+            <a href="profile.html" class="btn">En savoir plus</a>
+        </div>
+
+        <div class="card fade-in">
+            <h2>Mes compétences</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R/RShiny</span>
+                <span class="skill-tag">SQL/NoSQL</span>
+                <span class="skill-tag">VBA</span>
+                <span class="skill-tag">SAS</span>
+                <span class="skill-tag">PowerBI</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+            </div>
+        </div>
+
+        <div class="card fade-in">
+            <h2>Projets récents</h2>
+            <p>Découvrez mes derniers projets en statistiques spatiales et visualisation de données.</p>
+            <a href="projects.html" class="btn">Voir les projets</a>
+        </div>
+
+        <div class="card fade-in">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me contacter pour discuter de projets ou d'opportunités.</p>
+            <a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank" class="btn">LinkedIn</a>
+            <a href="mailto:ballu.samu@gmail.com" class="btn">Email</a>
+        </div>
     </div>
 </body>
 </html>
