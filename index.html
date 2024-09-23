@@ -1,42 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Home</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        h1, h2, h3 {
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+        h1:hover, h2:hover, h3:hover {
+            color: var(--accent-color);
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Salut à tous 👋, je suis Samuel</h1>
+    <h1>Hello everyone 👋, I'm Samuel</h1>
 
-    <p>🎓 Master en MAS, parcours Intelligence Artificielle</p>
-    <p>📊 Double diplôme en Magistère de Statistiques et Modélisation Économique</p>
+    <p>🎓 Master's in MAS, specializing in Artificial Intelligence</p>
+    <p>📊 Dual degree in Master's of Statistics and Economic Modeling</p>
 
-    <p><a href="cv.html">Lien vers mon CV</a></p>
+    <p><a href="cv.html">Link to my CV</a></p>
 
-    <h2>À propos de moi</h2>
-    <p>Je suis passionné par l'intelligence artificielle, la modélisation statistique et l'analyse de données. Voici quelques projets que j'ai réalisés au cours de mes études.</p>
+    <h2>About Me</h2>
+    <p>I am passionate about artificial intelligence, statistical modeling, and data analysis. Here are some projects I have completed during my studies.</p>
 
-    <h2>Projets en Statistiques</h2>
+    <h2>Statistics Projects</h2>
 
-    <h3><em>Bières artisanales autour de Rennes (R)</em></h3>
-    <p><a href="https://github.com/Minimugule/OptimalLocationCraftBeer" target="_blank">Lien vers le dépôt du projet</a></p>
-    <p><strong>Résumé</strong> : Ce projet R analyse l'emplacement optimal pour établir une cave à bière artisanale autour de Rennes, en utilisant des données démographiques, économiques et géographiques.</p>
+    <h3><em>Craft Beer Locations around Rennes (R)</em></h3>
+    <p><a href="https://github.com/Minimugule/OptimalLocationCraftBeer" target="_blank" class="project-link">Link to Project Repository</a></p>
+    <p><strong>Summary</strong>: This R project analyzes the optimal location for establishing a craft beer cellar around Rennes, using demographic, economic, and geographic data.</p>
 
-    <h3><em>Accidents de la route à Rennes (Python)</em></h3>
-    <p><a href="https://github.com/Minimugule/AnalyzesRoadAccidents" target="_blank">Lien vers le dépôt du projet</a></p>
-    <p><strong>Résumé</strong> : Ce projet en Python analyse les accidents de la route en utilisant les bibliothèques pandas et bokeh pour la visualisation des données.</p>
+    <h3><em>Road Accidents in Rennes (Python)</em></h3>
+    <p><a href="https://github.com/Minimugule/AnalyzesRoadAccidents" target="_blank" class="project-link">Link to Project Repository</a></p>
+    <p><strong>Summary</strong>: This Python project analyzes road accidents using pandas and bokeh libraries for data visualization.</p>
 
-    <h2>Compétences Techniques</h2>
+    <h2>Technical Skills</h2>
     <ul>
-        <li><strong>Langages</strong> : Python, R/RShiny, SQL/NoSQL, VBA, SAS, PowerBI</li>
-        <li><strong>Bibliothèques</strong> : matplotlib, Pandas, bokeh, torch, networkx, numpy, keras, tidyverse, FactoMineR, sf...</li>
-        <li><strong>Outils</strong> : Rstudio, Visual Studio Code, Jupyter, MongoDB</li>
+        <li><strong>Languages</strong>: Python, R/RShiny, SQL/NoSQL, VBA, SAS, PowerBI</li>
+        <li><strong>Libraries</strong>: matplotlib, Pandas, bokeh, torch, networkx, numpy, keras, tidyverse, FactoMineR, sf...</li>
+        <li><strong>Tools</strong>: RStudio, Visual Studio Code, Jupyter, MongoDB</li>
     </ul>
 
-    <h2>Contactez-moi</h2>
+    <h2>Contact Me</h2>
     <ul>
         <li><a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank">LinkedIn</a></li>
-        <li><a href="mailto:ballu.samu@gmail.com">Mail</a></li>
+        <li><a href="mailto:ballu.samu@gmail.com">Email</a></li>
     </ul>
 </body>
 </html>
