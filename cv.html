@@ -8,7 +8,7 @@
         :root {
             --primary-color: #2F9994;
             --secondary-color: #34495e;
-            --accent-color: #3498db;
+            --accent-color: #34495e;
             --background-color: #ecf0f1;
             --text-color: #333;
         }
@@ -54,7 +54,7 @@
             font-size: 2.5em;
         }
         h2 {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             border-bottom: 2px solid var(--accent-color);
             padding-bottom: 5px;
             transition: color 0.3s;
@@ -71,18 +71,21 @@
         .section {
             margin-bottom: 30px;
         }
-        .contact-info {
-            background-color: var(--secondary-color);
+        .left-column {
+            background-color: var(--primary-color);
             color: white;
             padding: 15px;
             border-radius: 10px;
-            transition: transform 0.3s;
         }
-        .contact-info:hover {
-            transform: scale(1.02);
+        .left-column h2 {
+            color: white;
+            border-bottom-color: white;
         }
-         .contact-info h2 {
-            color: var(--accent-color); /* Changer la couleur ici */
+        .left-column .section {
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
         }
         .contact-info p {
             margin: 5px 0;
@@ -119,7 +122,7 @@
             transition: background-color 0.3s;
         }
         .skill-item:hover {
-            background-color: #2980b9;
+            background-color: var(--primary-color);
         }
         /* Animation pour les sections */
         .section {
@@ -147,7 +150,7 @@
             </div>
             <div>
                 <h1>SAMUEL BALLU</h1>
-                <p><strong></strong>RECHERCHE D'UN STAGE DE FIN D'ÉTUDES DE 6 MOIS DANS LA DATA SCIENCE À PARTIR DE JANVIER 2025</strong></p>
+                <p><strong>RECHERCHE D'UN STAGE DE FIN D'ÉTUDES DE 6 MOIS DANS LA DATA SCIENCE À PARTIR DE JANVIER 2025</strong></p>
             </div>
         </header>
 
