@@ -5,135 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Samuel BALLU</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--background-color);
         }
-        h1, h2 {
-            color: #2c3e50;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .section {
-            margin-bottom: 20px;
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
         }
         .grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 20px;
+            gap: 30px;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
         }
         .contact-info {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SAMUEL BALLU</h1>
-        <p>RECHERCHE D'UN STAGE DE FIN D'ÉTUDES DE 6 MOIS DANS LA DATA SCIENCE À PARTIR DE JANVIER 2025</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="photo-placeholder">
+                Ajoutez votre photo ici
+            </div>
+            <div>
+                <h1>SAMUEL BALLU</h1>
+                <p>RECHERCHE D'UN STAGE DE FIN D'ÉTUDES DE 6 MOIS DANS LA DATA SCIENCE À PARTIR DE JANVIER 2025</p>
+            </div>
+        </header>
 
-    <div class="grid">
-        <div class="left-column">
-            <div class="contact-info section">
-                <h2>CONTACT</h2>
-                <p>07 84 35 97 22</p>
-                <p>ballu.samu@gmail.com</p>
-                <p>PAU (64)</p>
-                <p>VIEUX-BOUCAU (40)</p>
-                <p>Permis B</p>
+        <div class="grid">
+            <div class="left-column">
+                <div class="contact-info section">
+                    <h2>CONTACT</h2>
+                    <p>07 84 35 97 22</p>
+                    <p>ballu.samu@gmail.com</p>
+                    <p>PAU (64)</p>
+                    <p>VIEUX-BOUCAU (40)</p>
+                    <p>Permis B</p>
+                </div>
+
+                <div class="section">
+                    <h2>PROFIL</h2>
+                    <p>Rigoureux, sérieux et ponctuel, je souhaite développer mes compétences en analyse de données et assurer l'évolution et le développement d'une entreprise dynamique.</p>
+                </div>
+
+                <div class="section">
+                    <h2>COMPÉTENCES</h2>
+                    <div class="skills-list">
+                        <span class="skill-item">Analyse de données</span>
+                        <span class="skill-item">Manipulation de données</span>
+                        <span class="skill-item">Séries temporelles</span>
+                        <span class="skill-item">Statistique spatiale</span>
+                        <span class="skill-item">Régression linéaire</span>
+                        <span class="skill-item">Modèle logistique</span>
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">Données d'enquête</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>LANGAGES DE PROGRAMMATION</h2>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">R/Rshiny</span>
+                        <span class="skill-item">SQL/NoSQL</span>
+                        <span class="skill-item">VBA</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>LANGUES</h2>
+                    <ul>
+                        <li>Anglais (B2)</li>
+                        <li>Espagnol (A2)</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>LOISIRS</h2>
+                    <ul>
+                        <li>Basketball (au niveau départemental pendant 10 ans)</li>
+                        <li>Beach volley (depuis 5 ans)</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="section">
-                <h2>PROFIL</h2>
-                <p>Rigoureux, sérieux et ponctuel, je souhaite développer mes compétences en analyse de données et assurer l'évolution et le développement d'une entreprise dynamique.</p>
-            </div>
+            <div class="right-column">
+                <div class="section">
+                    <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+                    <div class="experience-item">
+                        <h3>MECADAQ - Service Finance - RH (Mai - Août 2024)</h3>
+                        <ul>
+                            <li>Création d'un Dashboard automatique et interactif avec des données confidentielles (salaires) en VBA pour le DAF</li>
+                            <li>Construction d'indicateurs visuels performants pour la détection d'erreurs et de valeurs aberrantes en lien avec la filliale US</li>
+                            <li>Extraction et mise en forme de données grâce à du requétage SQL</li>
+                        </ul>
+                    </div>
 
-            <div class="section">
-                <h2>COMPÉTENCES</h2>
-                <ul>
-                    <li>Analyse de données (R x Rshiny, Python x Plotly/Bokeh)</li>
-                    <li>Manipulation de données (R x tidyverse, SQL/NOSQL, Python x Pandas, Power BI x DAX)</li>
-                    <li>Séries temporelles</li>
-                    <li>Statistique spatiale</li>
-                    <li>Régression linéaire</li>
-                    <li>Modèle logistique</li>
-                    <li>Apprentissage supervisé et non supervisé</li>
-                    <li>Données d'enquête et sondage</li>
-                </ul>
-            </div>
+                    <div class="experience-item">
+                        <h3>Service Fiabilité (Avril - Juillet 2022)</h3>
+                        <ul>
+                            <li>Construction d'un tableau de bord sur Power BI pour la détection de défauts sur les produits.</li>
+                            <li>Autoformation en Power BI et codage DAX</li>
+                            <li>Transfert de l'exécution d'une macro VBA et Knime vers Power BI</li>
+                        </ul>
+                    </div>
 
-            <div class="section">
-                <h2>LANGAGES DE PROGRAMMATION</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Power BI</li>
-                    <li>R/Rshiny</li>
-                    <li>SQL/NoSQL</li>
-                    <li>VBA</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
+                    <div class="experience-item">
+                        <h3>Employé de restauration (Juillet et Août de 2020 à 2023)</h3>
+                        <ul>
+                            <li>Vente - Service aux clients</li>
+                            <li>Travail sous horaires variables et décalés (15h30 - 23h30) 7j/7</li>
+                            <li>Travail en équipe de 3 à 6 personnes</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div class="section">
-                <h2>LANGUES</h2>
-                <ul>
-                    <li>Anglais (B2)</li>
-                    <li>Espagnol (A2)</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h2>FORMATION</h2>
+                    <div class="experience-item">
+                        <h3>2023 - 2025 : Double diplôme</h3>
+                        <ul>
+                            <li>M2 Statistique, Science des données, Intelligence Artificielle</li>
+                            <li>Magistère Statistique et Modélisation Economique</li>
+                            <li>Université Rennes I, Rennes II (Rennes 35), mention assez bien</li>
+                        </ul>
+                    </div>
 
-            <div class="section">
-                <h2>LOISIRS</h2>
-                <ul>
-                    <li>Basketball (au niveau départemental pendant 10 ans)</li>
-                    <li>Beach volley (depuis 5 ans)</li>
-                </ul>
-            </div>
-        </div>
+                    <div class="experience-item">
+                        <h3>2022 - 2023 : L3 Statistique</h3>
+                        <p>Université Bretagne Sud, (Vannes 56), position : 2/56</p>
+                    </div>
 
-        <div class="right-column">
-            <div class="section">
-                <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
-                <h3>MECADAQ - Service Finance - RH (Mai - Août 2024)</h3>
-                <ul>
-                    <li>Création d'un Dashboard automatique et interactif avec des données confidentielles (salaires) en VBA pour le DAF</li>
-                    <li>Construction d'indicateurs visuels performants pour la détection d'erreurs et de valeurs aberrantes en lien avec la filliale US</li>
-                    <li>Extraction et mise en forme de données grâce à du requétage SQL</li>
-                </ul>
-
-                <h3>Service Fiabilité (Avril - Juillet 2022)</h3>
-                <ul>
-                    <li>Construction d'un tableau de bord sur Power BI pour la détection de défauts sur les produits.</li>
-                    <li>Autoformation en Power BI et codage DAX</li>
-                    <li>Transfert de l'exécution d'une macro VBA et Knime vers Power BI</li>
-                </ul>
-
-                <h3>Employé de restauration (Juillet et Août de 2020 à 2023)</h3>
-                <ul>
-                    <li>Vente - Service aux clients</li>
-                    <li>Travail sous horaires variables et décalés (15h30 - 23h30) 7j/7</li>
-                    <li>Travail en équipe de 3 à 6 personnes</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>FORMATION</h2>
-                <h3>2023 - 2025 : Double diplôme</h3>
-                <ul>
-                    <li>M2 Statistique, Science des données, Intelligence Artificielle</li>
-                    <li>Magistère Statistique et Modélisation Economique</li>
-                    <li>Université Rennes I, Rennes II (Rennes 35), mention assez bien</li>
-                </ul>
-
-                <h3>2022 - 2023 : L3 Statistique</h3>
-                <p>Université Bretagne Sud, (Vannes 56), position : 2/56</p>
-
-                <h3>2020 - 2022 : DUT Statistique et Informatique Décisionnelle</h3>
-                <p>Université de Pau et des Pays de l'Adour, (Pau 64)</p>
+                    <div class="experience-item">
+                        <h3>2020 - 2022 : DUT Statistique et Informatique Décisionnelle</h3>
+                        <p>Université de Pau et des Pays de l'Adour, (Pau 64)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
