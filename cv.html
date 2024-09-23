@@ -24,8 +24,8 @@
             max-width: 1200px;
             margin: 0 auto;
             background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
             overflow: hidden;
         }
         header {
@@ -34,6 +34,7 @@
             padding: 20px;
             display: flex;
             align-items: center;
+            position: relative;
         }
         .photo-placeholder {
             width: 150px;
@@ -56,6 +57,10 @@
             color: var(--secondary-color);
             border-bottom: 2px solid var(--accent-color);
             padding-bottom: 5px;
+            transition: color 0.3s;
+        }
+        h2:hover {
+            color: var(--accent-color);
         }
         .grid {
             display: grid;
@@ -70,7 +75,11 @@
             background-color: var(--secondary-color);
             color: white;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .contact-info:hover {
+            transform: scale(1.02);
         }
         .contact-info p {
             margin: 5px 0;
@@ -88,6 +97,10 @@
         .experience-item h3 {
             color: var(--accent-color);
             margin-bottom: 5px;
+            transition: color 0.3s;
+        }
+        .experience-item h3:hover {
+            color: var(--primary-color);
         }
         .skills-list {
             display: flex;
@@ -100,6 +113,26 @@
             padding: 5px 10px;
             border-radius: 15px;
             font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        .skill-item:hover {
+            background-color: #2980b9;
+        }
+        /* Animation pour les sections */
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
