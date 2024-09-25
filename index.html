@@ -3,104 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel BALLU - Accueil</title>
-    <style>
-        :root {
-            --primary-color: #2F9994;
-            --secondary-color: #ffffff;
-            --accent-color: #2c3e50;
-            --background-color: #ecf0f1;
-            --card-shadow: rgba(0, 0, 0, 0.1);
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: var(--accent-color);
-            background-color: var(--background-color);
-        }
-        .navbar {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar li {
-            margin: 0 1rem;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .navbar a:hover {
-            color: var(--accent-color);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        h1, h2 {
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
-        h1:hover, h2:hover {
-            color: #1e7067;
-        }
-        .card {
-            background-color: var(--secondary-color);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 10px var(--card-shadow);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #1e7067;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-        .skill-tag {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.3rem 0.6rem;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-    </style>
+    <title>CV - Samuel BALLU</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -112,36 +16,49 @@
     </nav>
 
     <div class="container">
-        <h1 class="fade-in">Samuel BALLU</h1>
+        <h1 class="fade-in">My Portfolio</h1>
         
         <div class="card fade-in">
-            <h2>À propos de moi</h2>
-            <p>Étudiant en Master spécialisé en Intelligence Artificielle, avec un double diplôme en Ingénierie Statistique et Modélisation Économique. Passionné par l'IA et son impact sur notre quotidien, je me concentre sur l'application de ces technologies à des projets concrets.</p>
+            <h2>About me</h2>
+                <p>My name is Samuel Ballu, a Master’s student specializing in Artificial Intelligence, with a double degree in Statistical Engineering and Economic Modeling. My academic journey has equipped me with strong skills in data analysis, statistical modeling, and the development of Machine Learning and Deep Learning algorithms. Passionate about the evolution of artificial intelligence and its potential impact on our daily lives, I focus on applying these technologies to real-world projects.</p>
+                    <h3>My Passions and Hobbies</h3>
+                        <p>I played basketball for 10 years at the regional level, where I won four titles. This experience taught me the importance of teamwork, discipline, and resilience—values I also apply to my academic and professional projects. I had the privilege of being my team’s captain many times, serving as a conduit for the coach’s instructions to my teammates.</p>
+                        <p>For the past five years, I’ve also been playing beach volleyball with my friends. This sport allows me to unwind and maintain a healthy balance between work and pleisure.</p>
+                        <p>Outside of sports, I’m a huge cinema enthusiast. My favorite directors include Christopher Nolan and Quentin Tarantino, whose works I admire for their creativity, intricate storytelling, and ability to captivate audiences. I often find parallels between the complexity of their narratives and how artificial intelligence models can be used to solve complex problems.</p>
         </div>
 
         <div class="card fade-in">
             <h2>Mes compétences</h2>
             <div class="skills">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">R/RShiny</span>
-                <span class="skill-tag">SQL/NoSQL</span>
-                <span class="skill-tag">VBA</span>
-                <span class="skill-tag">SAS</span>
-                <span class="skill-tag">PowerBI</span>
+                <span class="language-tag">Python</span>
+                <span class="language-tag">R/RShiny</span>
+                <span class="language-tag">SQL/NoSQL</span>
+                <span class="language-tag">VBA</span>
+                <span class="language-tag">SAS</span>
+                <span class="language-tag">PowerBI</span>
+                <span class="language-tag">HTML/CSS</span>
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">AI</span>
+                <span class="skill-tag">Language Processing</span>
+                <span class="skill-tag">Signal And Image Processing</span></span>
+                <span class="skill-tag">Time Series</span>
+                <span class="skill-tag">Supervised Learning</span>
+                <span class="skill-tag">Unsupervised Learning</span>
+                <span class="skill-tag">Optimisation</span>
+                <span class="skill-tag">Graph</span>
             </div>
         </div>
 
         <div class="card fade-in">
-            <h2>Projets récents</h2>
-            <p>Découvrez mes derniers projets en statistiques spatiales et visualisation de données.</p>
-            <a href="projects.html" class="btn">Voir les projets</a>
+            <h2>Projects</h2>
+            <p>Discover my statistic projects</p>
+            <a href="projects.html" class="btn">View Projects</a>
         </div>
 
         <div class="card fade-in">
             <h2>Contact</h2>
-            <p>N'hésitez pas à me contacter pour discuter de projets ou d'opportunités.</p>
+            <p>Don't hesitate to contact me to share experience or talk about opportunites</p>
             <a href="https://www.linkedin.com/in/samuel-ballu-3833a3202" target="_blank" class="btn">LinkedIn</a>
             <a href="mailto:ballu.samu@gmail.com" class="btn">Email</a>
         </div>
