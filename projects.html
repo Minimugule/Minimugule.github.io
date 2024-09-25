@@ -3,93 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel BALLU - Projets</title>
-    <style>
-        /* Styles from the home page */
-        :root {
-            --primary-color: #2F9994;
-            --secondary-color: #ffffff;
-            --accent-color: #2c3e50;
-            --background-color: #ecf0f1;
-            --card-shadow: rgba(0, 0, 0, 0.1);
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: var(--accent-color);
-            background-color: var(--background-color);
-        }
-        .navbar {
-            background-color: var(--primary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar li {
-            margin: 0 1rem;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .navbar a:hover {
-            color: var(--accent-color);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        h1, h2, h3 {
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
-        h1:hover, h2:hover, h3:hover {
-            color: #1e7067;
-        }
-        .card {
-            background-color: var(--secondary-color);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 10px var(--card-shadow);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #1e7067;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-    </style>
+    <title>CV - Samuel BALLU</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -106,20 +21,39 @@
         <div class="card fade-in">
             <h2>Projet de Statistiques Spatiales</h2>
             <h3>Localisation des Brasseries Artisanales autour de Rennes (R)</h3>
-            <p><strong>Résumé</strong> : Ce projet R se concentre sur l'analyse et la proposition d'implantation d'une cave à bière dans la région de Rennes. En utilisant une approche de statistiques spatiales, nous visons à identifier un emplacement optimal pour cette cave à bière et à sélectionner une marque pertinente. Grâce à une analyse méthodique, nous intégrerons des données démographiques, économiques et de consommation pour guider nos recommandations.</p>
-            <a href="Projet_cave_final.html" target="_blank" class="btn">Voir le projet</a>
+            <p><strong>Résumé</strong> : Ce projet <strong>R</strong> se concentre sur l'analyse et la proposition d'implantation d'une cave à bière dans la région de Rennes. En utilisant une approche de statistiques spatiales, nous visons à identifier un emplacement optimal pour cette cave à bière et à sélectionner une marque pertinente. Grâce à une analyse méthodique, nous intégrerons des données démographiques, économiques et de consommation pour guider nos recommandations.</p>
+            <a href="Projet/Projet_cave_final.html" target="_blank" class="btn">Voir le projet</a>
         </div>
 
         <div class="card fade-in">
             <h2>Projet de Visualisation</h2>
             <h3>Accidents de la Route à Rennes (Python)</h3>
-            <p><strong>Résumé</strong> : Ce projet Python s'est concentré sur l'analyse des données d'accidents de la route survenus à Rennes entre 2012 et 2022. Nous avons examiné l'évolution des incidents impliquant des blessés, des décès, etc., ainsi que leur répartition géographique à l'aide d'une carte des lieux d'accidents. De plus, nous avons étudié la distribution des accidents en fonction des types de véhicules impliqués, ainsi que les heures et les jours où les accidents sont les plus fréquents. Ces analyses fournissent des informations pour éclairer les politiques de sécurité routière et les efforts de prévention des accidents dans la région de Rennes.</p>
-            <a href="Projet_Visualisation_Accidents_Rennes.html" target="_blank" class="btn">Voir le projet</a>
+            <p><strong>Résumé</strong> : Ce projet <strong>Python</strong> s'est concentré sur l'analyse des données d'accidents de la route survenus à Rennes entre 2012 et 2022. Nous avons examiné l'évolution des incidents impliquant des blessés, des décès, etc., ainsi que leur répartition géographique à l'aide d'une carte des lieux d'accidents. De plus, nous avons étudié la distribution des accidents en fonction des types de véhicules impliqués, ainsi que les heures et les jours où les accidents sont les plus fréquents. Ces analyses fournissent des informations pour éclairer les politiques de sécurité routière et les efforts de prévention des accidents dans la région de Rennes.</p>
+            <a href="Projet/Projet_Visualisation_Accidents_Rennes.html" target="_blank" class="btn">Voir le projet</a>
+            <h3>Athlétisme en Bretagne</h3>
+            <p><strong>Résumé</strong> : Ce projet <strong>Rshiny</strong> se concentre sur l'étude des clubs d'athlétisme en Bretagne. Chaque année, en athlétisme, se tiennent les inter-clubs, une compétition couvrant toutes les disciplinesde ce sport, telles que la course, le lancer, le saut, la marche,. . .  L’objectif est de classer les clubs auniveau national. Pour chaque catégorie, deux hommes et deux femmes participent, et en fonction de leursperformances, des points sont accordés au club. Le but est d’accumuler le plus de points possible. Cependant,les clubs ne bénéficient pas d’outils informatiques pour calculer ces points, ce qui les contraint à consulter destables pour déterminer les points attribués à leurs performances. Nous avons été sollicités pour développerune application capable d’effectuer ce calcul et ainsi attribuer les points correspondants à chaque épreuve.</p>
+            <a href = "Projet/ProjetAthletisme.pdf" target = "_blank" class = "btn">Voir le projet</a>
         </div>
 
         <div class="card fade-in">
             <h2>Projets IA</h2>
             <p>En développement</p>
+        </div>
+
+        <div class="card fade-in">
+            <h2>Projet Séries Temporelles</h2>
+            <h3>Prédiction de la météo à Londres</h3>
+            <p><strong>Résumé</strong> : Ce projet <strong>R</strong> a pour but de prédire la température météorologique à Londres. L’analyse des séries temporelles est cruciale pour comprendre et prévoir les phénomènes météorologiques. Dans ce rapport, nous étudions les températures moyennes enregistrées à Londres en utilisant divers outils statistiques et de modélisation. Nous appliquons des techniques de décomposition des séries temporelles pour identifier les tendances et les composantes saisonnières, suivies de la modélisation ARIMA pour capturer les dépendances temporelles. Notre objectif est de comprendre les tendances et les fluctuations des températures moyennes à Londres.</p>
+            <a href = "Projet/ProjetMeteo.pdf" target="_blank" class="btn">Voir le projet</a>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Projet Econométrie</h2>
+            <h3>Prédiction des salaires NBA</h3>
+            <p><strong>Résumé</strong> : Ce projet <strong>R</strong> a pour but de prédire les salaires des joueurs NBA. L’intersection entre la performance des joueurs de la NBA et leur rémunération a toujours été un sujet captivant. Notre projet se plonge dans cette dynamique, examinant les données de 1996 à 2017 pour comprendre comment les performances individuelles influent sur les contrats et les salaires de nos joueurs. À travers une approche Économétrique, nous explorons les liens entre les perfomances sur le terrain et la compensation financière des joueurs. Dans ce contexte nous nous posons la question suivante : <strong>Dans quelle mesure les performances individuelles des joueurs de basket influent-elles sur leur salaire?</strong></p>
+            <p>Cette analyses’inscritdanslecontextepluslargedesdébatsactuelssurlessalairesdesathlètesprofessionnels, offrant des perspectives significatives pour les passionnés de basketball, les analystes économiques, et les acteurs du monde sportif.</p>
+            <a href = "Projet/Projet_NBA.pdf" target="_blank" class="btn">Voir le projet</a>
+        </div>
         </div>
     </div>
 </body>
