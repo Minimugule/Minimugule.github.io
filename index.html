@@ -8,15 +8,14 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="projects.html">Projets</a></li>
-        </ul>
+            <a href="index.html">Accueil</a>
+            <a href="cv.html">CV</a>
+            <a href="projects.html">Projets</a>
+        
     </nav>
 
     <div class="container">
-        <h1 class="fade-in">My Portfolio</h1>
+        <h1 class="card fade-in">My Portfolio</h1>
         
         <div class="card fade-in">
             <h2>About me</h2>
@@ -69,5 +68,13 @@
             <a href="mailto:ballu.samu@gmail.com" class="btn">Email</a>
         </div>
     </div>
+
+    <!--Dark mode-->
+    <button id="darkModeToggle" aria-label="Activer/désactiver le mode sombre">
+        <span class="moon">🌙</span>
+        <span class="sun">☀️</span>
+    </button>
+
+    <script src="dark-mode.js"></script>
 </body>
 </html>
