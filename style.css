@@ -40,6 +40,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    text-align: center;
+    word-spacing: 20px;
 }
 
 .navbar ul {
@@ -80,9 +82,18 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 1;
     font-size: 2.5em;
+    color: #ffffff;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+    text-shadow: 
+        -1px -1px 0 var(--primary-color), /* Ombre vers le haut gauche */
+        1px -1px 0 var(--primary-color),  /* Ombre vers le haut droit */
+        -1px 1px 0 var(--primary-color),  /* Ombre vers le bas gauche */
+        1px 1px 0 var(--primary-color);   /* Ombre vers le bas droit */
 }
+
 
 h2 {
     color: var(--primary-color);
@@ -216,6 +227,8 @@ li::before {
 
 .btn:hover {
     background-color: #1e7067;
+    transition: 1s;
+    scale: 1.2;
 }
 
 .skills {
@@ -250,6 +263,7 @@ li::before {
     transition: background-color 0.3s;
 }
 
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -260,6 +274,54 @@ li::before {
         transform: translateY(0);
     }
 }
+
+/* Styles pour le bouton de basculement */
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#darkModeToggle .sun {
+    display: none;
+}
+
+#darkModeToggle .moon {
+    display: inline-block;
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar {
+    background-color: #333333;
+}
+
+body.dark-mode .navbar a {
+    color: #ffffff;
+}
+
+body.dark-mode #darkModeToggle .sun {
+    display: inline-block;
+}
+
+body.dark-mode #darkModeToggle .moon {
+    display: none;
+}
+
 
 @keyframes fadeIn {
     from {
