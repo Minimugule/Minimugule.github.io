@@ -88,12 +88,11 @@ h1 {
     padding-bottom: 5px;
     transition: color 0.3s;
     text-shadow: 
-        -1px -1px 0 var(--primary-color), /* Ombre vers le haut gauche */
-        1px -1px 0 var(--primary-color),  /* Ombre vers le haut droit */
-        -1px 1px 0 var(--primary-color),  /* Ombre vers le bas gauche */
-        1px 1px 0 var(--primary-color);   /* Ombre vers le bas droit */
+        -1px -1px 0 var(--primary-color),
+        1px -1px 0 var(--primary-color),
+        -1px 1px 0 var(--primary-color),
+        1px 1px 0 var(--primary-color);
 }
-
 
 h2 {
     color: var(--primary-color);
@@ -234,35 +233,39 @@ li::before {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.8rem;
+}
+
+.skill-tag, .language-tag {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .skill-tag {
     background-color: var(--primary-color);
     color: white;
-    padding: 0.3rem 0.6rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
 }
 
 .language-tag {
     background-color: var(--accent-color);
     color: white;
-    padding: 0.3rem 0.6rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
+}
+
+.language-tag:hover, .skill-tag:hover {
+    transform: translateY(-2px);
 }
 
 .language-tag:hover {
     background-color: #1a2937;
-    transition: background-color 0.3s;
 }
 
 .skill-tag:hover {
     background-color: #1e7067;
-    transition: background-color 0.3s;
 }
-
 
 @keyframes fadeInUp {
     from {
@@ -275,7 +278,6 @@ li::before {
     }
 }
 
-/* Styles pour le bouton de basculement */
 #darkModeToggle {
     background: none;
     border: none;
@@ -295,7 +297,6 @@ li::before {
     display: inline-block;
 }
 
-/* Styles pour le mode sombre */
 body.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -322,7 +323,6 @@ body.dark-mode #darkModeToggle .moon {
     display: none;
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -334,4 +334,90 @@ body.dark-mode #darkModeToggle .moon {
 
 .fade-in {
     animation: fadeIn 1s ease-in;
+}
+
+/* Nouvelles classes pour les images */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 4px solid var(--primary-color);
+}
+
+.hobbies-images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.hobby-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.hobby-icon:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.education-logos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.university-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.work-experience {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.company-logo {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.project-banner {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+body.dark-mode .profile-pic {
+    border-color: var(--accent-color);
+}
+
+body.dark-mode .hobby-icon,
+body.dark-mode .university-logo,
+body.dark-mode .company-logo,
+body.dark-mode .project-banner {
+    filter: brightness(0.8);
 }
